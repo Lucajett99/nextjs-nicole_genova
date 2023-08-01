@@ -75,7 +75,7 @@ export default function WhoIAm() {
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <img src="/certification.svg" className="mt-1 h-5 w-5 flex-none" />
+                  <img src="/certification.svg" className="mt-1 h-5 w-5 flex-none" alt=""/>
                   <span>
                     <strong className="font-semibold text-gray-900">
                       Specializzata in bambini bisbetici.
@@ -86,7 +86,7 @@ export default function WhoIAm() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <img src="/speech.svg" className="mt-1 h-5 w-5 flex-none" />
+                  <img src="/speech.svg" className="mt-1 h-5 w-5 flex-none" alt=""/>
                   <span>
                     <strong className="font-semibold text-gray-900">
                       Parla come mangia.
@@ -96,7 +96,7 @@ export default function WhoIAm() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <img src="/violence.svg" className="mt-1 h-5 w-5 flex-none" />
+                  <img src="/violence.svg" className="mt-1 h-5 w-5 flex-none" alt=""/>
                   <span>
                     <strong className="font-semibold text-gray-900">
                       Se balbetti ti picchio.
