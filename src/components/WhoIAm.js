@@ -117,7 +117,7 @@ export default function WhoIAm() {
                 Se hai problemi a parlare vieni da me
               </h2>
               <p className="mt-6">
-                Cosi' ti picchio a sangue.<br/>
+                Cosi ti picchio a sangue.<br/>
                 Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
                 consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
                 vitae interdum mauris enim, consequat vulputate nibh. Maecenas
