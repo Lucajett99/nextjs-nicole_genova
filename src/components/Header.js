@@ -3,6 +3,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/logo.svg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -24,7 +25,7 @@ export default function Header() {
         <div className="flex lg:flex-auto">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image className="h-8 w-auto" src="/logo.svg" alt="" width={20} height={20}/>
+            <Image className="h-8 w-auto" src={logo} alt=""/>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -60,7 +61,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <Image className="h-8 w-auto" src="/logo.svg" alt="" width={300} height={200}/>
+              <Image className="h-8 w-auto" src={logo} alt=""/>
             </Link>
             <button
               type="button"

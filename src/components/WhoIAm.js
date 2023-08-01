@@ -1,5 +1,8 @@
 import Image from "next/image";
 import profileImage from "../../public/nicole.jpeg";
+import violenceImage from "../../public/violence.svg";
+import certificationImage from "../../public/certification.svg";
+import speechImage from "../../public/speech.svg";
 
 export default function WhoIAm() {
   return (
@@ -74,11 +77,9 @@ export default function WhoIAm() {
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <Image
-                    src="/certification.svg"
+                    src={certificationImage}
                     className="mt-1 h-5 w-5 flex-none"
                     alt=""
-                    width={20}
-                    height={20}
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
@@ -91,11 +92,9 @@ export default function WhoIAm() {
                 </li>
                 <li className="flex gap-x-3">
                   <Image
-                    src="/speech.svg"
+                    src={speechImage}
                     className="mt-1 h-5 w-5 flex-none"
                     alt=""
-                    width={20}
-                    height={20}
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
@@ -107,11 +106,9 @@ export default function WhoIAm() {
                 </li>
                 <li className="flex gap-x-3">
                   <Image
-                    src="/violence.svg"
+                    src={violenceImage}
                     className="mt-1 h-5 w-5 flex-none"
                     alt=""
-                    width={20}
-                    height={20}
                   />
                   <span>
                     <strong className="font-semibold text-gray-900">
