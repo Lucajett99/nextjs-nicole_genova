@@ -1,7 +1,5 @@
-import {
-  AcademicCapIcon,
-} from "@heroicons/react/20/solid";
-
+import Image from "next/image";
+import profileImage from "../../public/nicole.jpeg";
 
 export default function WhoIAm() {
   return (
@@ -56,9 +54,9 @@ export default function WhoIAm() {
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
+          <Image
             className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
-            src="/nicole.jpeg"
+            src={profileImage}
             alt=""
           />
         </div>
@@ -75,7 +73,13 @@ export default function WhoIAm() {
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                  <img src="/certification.svg" className="mt-1 h-5 w-5 flex-none" alt=""/>
+                  <Image
+                    src="/certification.svg"
+                    className="mt-1 h-5 w-5 flex-none"
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
                   <span>
                     <strong className="font-semibold text-gray-900">
                       Specializzata in bambini bisbetici.
@@ -86,7 +90,13 @@ export default function WhoIAm() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <img src="/speech.svg" className="mt-1 h-5 w-5 flex-none" alt=""/>
+                  <Image
+                    src="/speech.svg"
+                    className="mt-1 h-5 w-5 flex-none"
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
                   <span>
                     <strong className="font-semibold text-gray-900">
                       Parla come mangia.
@@ -96,7 +106,13 @@ export default function WhoIAm() {
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <img src="/violence.svg" className="mt-1 h-5 w-5 flex-none" alt=""/>
+                  <Image
+                    src="/violence.svg"
+                    className="mt-1 h-5 w-5 flex-none"
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
                   <span>
                     <strong className="font-semibold text-gray-900">
                       Se balbetti ti picchio.
@@ -117,7 +133,8 @@ export default function WhoIAm() {
                 Se hai problemi a parlare vieni da me
               </h2>
               <p className="mt-6">
-                Cosi ti picchio a sangue.<br/>
+                Cosi ti picchio a sangue.
+                <br />
                 Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
                 consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
                 vitae interdum mauris enim, consequat vulputate nibh. Maecenas
