@@ -46,12 +46,46 @@ export default function WhoIAm() {
                 Il mio percorso
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Per una comunicazione migliore
+                Chi sono
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                id at vitae feugiat egestas.
+                Laureata con lode in logopedia presso la facoltà di Medicina e
+                Chirurgia dell’Università di TORVERGATA di Roma nell’anno 2019.{" "}
+                <br />
+                <br />
+                Ho concluso il I° Modulo del corso di formazione LIS (Lingua
+                Italiana dei Segni) promulgato dall’ANSI a giugno 2018.
+                <br />
+                <br />
+                Ho partecipato al corso di I° livello tecnica Prompt, diventando
+                Prompter di I livello, per il trattamento dei disturbi
+                fono-articolatori del linguaggio.
+                <br />
+                <br />
+                Ho eseguito la formazione di I livello nella valutazione e
+                terapia dello squilibrio muscolare orofacciale - metodo
+                Andretta.
+                <br />
+                <br />
+                Da gennaio 2022 sono una logopedista abilitata all’applicazione
+                del metodo Logogenia®.
+                <br />
+                <br />
+                In seguito ad un tirocinio formativo, ho collaborato come libero
+                professionista presso il Centro PotenziAli - Neuropsicologia
+                dello Sviluppo di Roma, occupandomi principalmente del
+                trattamento dei disturbi dell’apprendimento.
+                <br />
+                <br />
+                Da gennaio 2020 svolgo la mia attività sulla provincia di Chieti
+                e di Campobasso.
+                <br />
+                <br />
+                Attualmente sono iscritta al Corso di Alta Formazione in Metodo
+                Propriocettivo Elastico (Proel), presso l’Università
+                Internazionale Menéndez Pelayo di Santander (Spagna), per
+                trattare i disturbi della voce e ottimizzare la voce normale e
+                professionale.
               </p>
             </div>
           </div>
@@ -66,78 +100,22 @@ export default function WhoIAm() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
-              </p>
-              <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                <li className="flex gap-x-3">
-                  <Image
-                    src={certificationImage}
-                    className="mt-1 h-5 w-5 flex-none"
-                    alt=""
-                  />
-                  <span>
-                    <strong className="font-semibold text-gray-900">
-                      Specializzata in bambini bisbetici.
-                    </strong>{" "}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <Image
-                    src={speechImage}
-                    className="mt-1 h-5 w-5 flex-none"
-                    alt=""
-                  />
-                  <span>
-                    <strong className="font-semibold text-gray-900">
-                      Parla come mangia.
-                    </strong>{" "}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
-                  </span>
-                </li>
-                <li className="flex gap-x-3">
-                  <Image
-                    src={violenceImage}
-                    className="mt-1 h-5 w-5 flex-none"
-                    alt=""
-                  />
-                  <span>
-                    <strong className="font-semibold text-gray-900">
-                      Se balbetti ti picchio.
-                    </strong>{" "}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
-                  </span>
-                </li>
-              </ul>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
-              </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                Se hai problemi a parlare vieni da me
+                Per approfondire
               </h2>
-              <p className="mt-6">
-                Cosi ti picchio a sangue.
-                <br />
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+              <p className="mt-6 indent-6">
+                <ul className="list-disc list-inside">
+                  <li>
+                    <a href="https://logogenia.it/la-logogenia/" target="_blank">
+                      Metodo Logogenia
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=d1eMHygmIwQ" target="_blank">
+                      Metodo Prompt
+                    </a>
+                  </li>
+                </ul>
               </p>
             </div>
           </div>
