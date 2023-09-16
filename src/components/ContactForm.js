@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
 
 
@@ -30,14 +29,16 @@ export default function ContactForm() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Contatti
           </h2>
-          <p className="mt-2 text-base leading-8 text-gray-800">
-            Telefono: +39 0123456789
-          </p>
-          <p className="mt-2 text-base leading-8 text-gray-800">
-            Email: logopedistanicolegenova@gmail.com
+          <p className="mt-2 text-lg leading-8 text-gray-800">
+            Puoi contattarmi ai seguenti recapiti:
+            <ul className="text-black">
+              <li>Telefono: +39 0123456789</li>
+              <li>Email: logopedistanicolegenova@gmail.com</li>
+            </ul>
           </p>
           <p className="mt-2 text-lg leading-8 text-gray-800">
-            Oppure compila il form sottostante e sarai ricontattato al più presto
+            Oppure compila il form sottostante e sarai ricontattato al più
+            presto
           </p>
         </div>
         <form
@@ -51,7 +52,7 @@ export default function ContactForm() {
                 htmlFor="first-name"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                First name
+                Nome
               </label>
               <div className="mt-2.5">
                 <input
@@ -68,7 +69,7 @@ export default function ContactForm() {
                 htmlFor="last-name"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Last name
+                Cognome
               </label>
               <div className="mt-2.5">
                 <input
@@ -85,7 +86,7 @@ export default function ContactForm() {
                 htmlFor="email"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Email
+                E-mail
               </label>
               <div className="mt-2.5">
                 <input
@@ -102,7 +103,7 @@ export default function ContactForm() {
                 htmlFor="phone-number"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Phone number
+                Numero di telefono
               </label>
               <div className="relative mt-2.5">
                 <div className="absolute inset-y-0 left-0 flex items-center">
@@ -114,14 +115,10 @@ export default function ContactForm() {
                     name="country"
                     className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                   >
+                    <option>EU</option>
                     <option>US</option>
                     <option>CA</option>
-                    <option>EU</option>
                   </select>
-                  <ChevronDownIcon
-                    className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                    aria-hidden="true"
-                  />
                 </div>
                 <input
                   type="tel"
@@ -137,7 +134,7 @@ export default function ContactForm() {
                 htmlFor="message"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Message
+                Messagio
               </label>
               <div className="mt-2.5">
                 <textarea
@@ -183,7 +180,7 @@ export default function ContactForm() {
               type="submit"
               className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Let's talk
+              Invia
             </button>
           </div>
         </form>

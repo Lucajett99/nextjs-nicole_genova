@@ -1,13 +1,10 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-} from "@heroicons/react/24/outline";
-
 import Image from "next/image";
 import speechImage from "../../public/speech2.svg";
+import speechPublicImage from "../../public/speech3.svg";
 import learningImage from "../../public/learning.svg";
+import swallowingImage from "../../public/deglutizione.svg";
+import voiceImage from "../../public/voice.svg";
+import rehabilitationImage from "../../public/rehabilitation.svg";
 
 const features = [
   {
@@ -40,7 +37,43 @@ const features = [
       "Aiuto per affrontare problemi di deglutizione irregolare o problematica.",
     icon: (
       <Image
-        src={learningImage}
+        src={swallowingImage}
+        className="h-16 w-16 mx-auto text-indigo-600"
+        aria-hidden="true"
+      />
+    ),
+  },
+  {
+    name: "Disturbi della fluenza (balbuzie)",
+    description:
+      "Terapia per migliorare la fluidità nella comunicazione verbale.",
+    icon: (
+      <Image
+        src={speechPublicImage}
+        className="h-16 w-16 mx-auto text-indigo-600"
+        aria-hidden="true"
+      />
+    ),
+  },
+  {
+    name: "Disturbi della voce",
+    description:
+      "Interventi per preservare o ripristinare la salute e la qualità della voce.",
+    icon: (
+      <Image
+        src={voiceImage}
+        className="h-16 w-16 mx-auto text-indigo-600"
+        aria-hidden="true"
+      />
+    ),
+  },
+  {
+    name: "Esiti post-ictus (afasia)",
+    description:
+      "Supporto per la riabilitazione della comunicazione dopo ictus, compresa l'afasia.",
+    icon: (
+      <Image
+        src={rehabilitationImage}
         className="h-16 w-16 mx-auto text-indigo-600"
         aria-hidden="true"
       />
@@ -48,28 +81,6 @@ const features = [
   },
 ];
 
-/*
-
-  
-  {
-    name: "Disturbi della fluenza (balbuzie)",
-    description:
-      "Terapia per migliorare la fluidità nella comunicazione verbale.",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Disturbi della voce",
-    description:
-      "Interventi per preservare o ripristinare la salute e la qualità della voce.",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Esiti post-ictus (afasia)",
-    description:
-      "Supporto per la riabilitazione della comunicazione dopo ictus, compresa l'afasia.",
-    icon: FingerPrintIcon,
-  },
-*/
 
 export default function Treatments() {
   return (
@@ -83,13 +94,13 @@ export default function Treatments() {
         </p>
       </div>
       <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="grid grid-cols-2 gap-8 lg:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.name}
-              className="text-center bg-slate-300 rounded-lg shadow-lg"
+              className="text-center bg-slate-300 rounded-xl shadow-lg h-72"
             >
-              <div className="p-6">
+              <div className="p-6 h-full">
                 {feature.icon}
                 <p className="mt-4 text-base font-semibold text-gray-900">
                   {feature.name}
