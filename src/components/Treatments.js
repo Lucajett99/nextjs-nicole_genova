@@ -89,23 +89,23 @@ export default function Treatments() {
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Di cosa mi occupo?
         </p>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
+        <p className="mt-6 sm:text-lg leading-8 text-gray-600">
           Questi sono i trattamenti che utilizzo per picchiare i bambini
         </p>
       </div>
-      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <div className="grid grid-cols-2 gap-8 lg:grid-cols-3">
+      <div className="mx-auto mt-16 max-w-2xl sm:mt-16 lg:mt-20 lg:max-w-4xl">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.name}
-              className="text-center bg-slate-300 rounded-xl shadow-lg h-72"
+              className="text-center text-base lg:text-base bg-slate-300 rounded-xl shadow-lg h-70 p-4 sm:p-2 lg:p-7"
             >
-              <div className="p-6 h-full">
+              <div className="h-full">
                 {feature.icon}
-                <p className="mt-4 text-base font-semibold text-gray-900">
+                <p className="mt-4 font-semibold text-gray-900">
                   {feature.name}
                 </p>
-                <p className="mt-2 text-base text-gray-600">
+                <p className="mt-2 text-gray-600">
                   {feature.description}
                 </p>
               </div>
