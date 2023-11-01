@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
 
     useEffect(() => {
         const isUnderConstruction = true;
-        if (isUnderConstruction && router.pathname !== '/coming_soon') {
+        if (!isUnderConstruction && router.pathname !== '/') {
             router.push('/coming_soon');
         }
     },[router.pathname]);
