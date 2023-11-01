@@ -30,3 +30,19 @@ export default function index() {
      </Layout>
    );
 };
+
+export async function getServerSideProps(context) {
+  const isUnderConstruction = true;
+  if (isUnderConstruction && context.req.url === "/") {
+    return {
+      redirect: {
+        destination: "/coming_soon",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
+}

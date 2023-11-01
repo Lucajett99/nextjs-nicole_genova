@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function coming_soon({ children }) {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-300 to-purple-500">
+    <div className="min-h-screen bg-gradient-to-r from-blue-300 to-purple-500 flex justify-center items-center">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div className="text-center item">
+        <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Sito in costruzione <br />
             ...
