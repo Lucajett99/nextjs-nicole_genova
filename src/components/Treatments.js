@@ -16,6 +16,7 @@ const features = [
         src={speechImage}
         className="h-16 w-16 mx-auto text-indigo-600"
         aria-hidden="true"
+        loading="lazy"
       />
     ),
   },
@@ -28,6 +29,7 @@ const features = [
         src={learningImage}
         className="h-16 w-16 mx-auto text-indigo-600"
         aria-hidden="true"
+        loading="lazy"
       />
     ),
   },
@@ -40,6 +42,7 @@ const features = [
         src={swallowingImage}
         className="h-16 w-16 mx-auto text-indigo-600"
         aria-hidden="true"
+        loading="lazy"
       />
     ),
   },
@@ -52,6 +55,7 @@ const features = [
         src={speechPublicImage}
         className="h-16 w-16 mx-auto text-indigo-600"
         aria-hidden="true"
+        loading="lazy"
       />
     ),
   },
@@ -64,6 +68,7 @@ const features = [
         src={voiceImage}
         className="h-16 w-16 mx-auto text-indigo-600"
         aria-hidden="true"
+        loading="lazy"
       />
     ),
   },
@@ -76,6 +81,7 @@ const features = [
         src={rehabilitationImage}
         className="h-16 w-16 mx-auto text-indigo-600"
         aria-hidden="true"
+        loading="lazy"
       />
     ),
   },
@@ -90,7 +96,7 @@ export default function Treatments() {
           Di cosa mi occupo?
         </p>
         <p className="mt-6 sm:text-lg leading-8 text-gray-600">
-          Questi sono i trattamenti che utilizzo per picchiare i bambini
+          Questi sono i trattamenti che utilizzo
         </p>
       </div>
       <div className="mx-auto mt-16 max-w-2xl sm:mt-16 lg:mt-20 lg:max-w-4xl">

@@ -9,7 +9,17 @@ const Marker = (props) => {
         // Esegui le azioni desiderate quando il marker viene cliccato
     onClick({ markerId, lat, lng });
   };
-  return <div onClick={handleClick}><Image src={markerImage} className="h-8 w-8 mx-auto text-indigo-600" aria-hidden="true" />;</div>;
+  return (
+    <div onClick={handleClick}>
+      <Image
+        src={markerImage}
+        className="h-8 w-8 mx-auto text-indigo-600"
+        aria-hidden="true"
+        loading="lazy"
+      />
+      ;
+    </div>
+  );
 };
 
 
@@ -70,7 +80,6 @@ const SimpleMap = () => {
 
   return (
     <div
-      style={{ width: "50%" }}
       className="block max-w-sm p-1 bg-slate-300 border border-slate-300 rounded-lg shadow "
     >
       {mapReady}
