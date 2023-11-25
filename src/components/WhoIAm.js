@@ -51,36 +51,36 @@ export default function WhoIAm() {
               <p className="mt-6 text-xl leading-8 text-gray-700">
                 Laureata con lode in logopedia presso la facoltà di Medicina e
                 Chirurgia dell’Università di TORVERGATA di Roma nell’anno 2019.{" "}
-                <br />
-                <br />
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
                 Ho concluso il I° Modulo del corso di formazione LIS (Lingua
                 Italiana dei Segni) promulgato dall’ANSI a giugno 2018.
-                <br />
-                <br />
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
                 Ho partecipato al corso di I° livello tecnica Prompt, diventando
                 Prompter di I livello, per il trattamento dei disturbi
                 fono-articolatori del linguaggio.
-                <br />
-                <br />
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
                 Ho eseguito la formazione di I livello nella valutazione e
                 terapia dello squilibrio muscolare orofacciale - metodo
                 Andretta.
-                <br />
-                <br />
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
                 Da gennaio 2022 sono una logopedista abilitata all’applicazione
                 del metodo Logogenia®.
-                <br />
-                <br />
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
                 In seguito ad un tirocinio formativo, ho collaborato come libero
                 professionista presso il Centro PotenziAli - Neuropsicologia
                 dello Sviluppo di Roma, occupandomi principalmente del
                 trattamento dei disturbi dell’apprendimento.
-                <br />
-                <br />
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
                 Da gennaio 2020 svolgo la mia attività sulla provincia di Chieti
                 e di Campobasso.
-                <br />
-                <br />
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-700">
                 Attualmente sono iscritta al Corso di Alta Formazione in Metodo
                 Propriocettivo Elastico (Proel), presso l’Università
                 Internazionale Menéndez Pelayo di Santander (Spagna), per
@@ -95,6 +95,7 @@ export default function WhoIAm() {
             className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
             src={profileImage}
             alt=""
+            loading="lazy"
           />
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -103,20 +104,21 @@ export default function WhoIAm() {
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                 Per approfondire
               </h2>
-              <p className="mt-6 indent-6">
-                <ul className="list-disc list-inside">
-                  <li>
-                    <a href="https://logogenia.it/la-logogenia/" target="_blank">
-                      Metodo Logogenia
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/watch?v=d1eMHygmIwQ" target="_blank">
-                      Metodo Prompt
-                    </a>
-                  </li>
-                </ul>
-              </p>
+              <ul className="mt-6 indent-6 list-disc list-inside">
+                <li>
+                  <a href="https://logogenia.it/la-logogenia/" target="_blank">
+                    Metodo Logogenia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=d1eMHygmIwQ"
+                    target="_blank"
+                  >
+                    Metodo Prompt
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

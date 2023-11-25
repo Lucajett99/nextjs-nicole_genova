@@ -74,11 +74,13 @@ export default function Approach() {
             className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
             src={logopedist}
             alt=""
+            loading="lazy"
           />
           <Image
             className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem] mt-10"
             src={logopedist2}
             alt=""
+            loading="lazy"
           />
         </div>
       </div>
