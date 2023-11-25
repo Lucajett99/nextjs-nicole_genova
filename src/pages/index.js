@@ -32,7 +32,7 @@ export default function index() {
 };
 
 export async function getServerSideProps(context) {
-  const isUnderConstruction = true;
+  const isUnderConstruction = false;
   if (isUnderConstruction && context.req.url === "/") {
     return {
       redirect: {

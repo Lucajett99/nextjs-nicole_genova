@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex lg:flex-auto">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image className="h-8 w-auto" src={logo} alt=""/>
+            <Image className="h-8 w-auto" src={logo} alt="" loading="lazy" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -61,7 +61,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <Image className="h-8 w-auto" src={logo} alt=""/>
+              <Image className="h-8 w-auto" src={logo} alt="" loading="lazy" />
             </Link>
             <button
               type="button"
@@ -76,7 +76,11 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
-                    <Link key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
                     {item.name}
                   </Link>
                 ))}
