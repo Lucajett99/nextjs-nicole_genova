@@ -91,7 +91,7 @@ const features = [
 export default function Treatments() {
   return (
     <div className="relative overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-      <div className="mx-auto max-w-2xl lg:text-center">
+      <div className="mx-auto max-w-2xl text-center">
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl">
           Di cosa mi occupo?
         </p>
@@ -104,9 +104,9 @@ export default function Treatments() {
           {features.map((feature) => (
             <div
               key={feature.name}
-              className="text-center text-sm lg:text-sm bg-slate-300 rounded-full shadow-lg h-70 w-70 p-4 sm:p-2 lg:p-7"
+              className="text-center text-s lg:text-sm bg-slate-300 rounded-full shadow-lg h-70 w-70 p-4 sm:p-2 lg:p-7"
             >
-              <div className="h-full">
+              <div className="h-[60%] w-[80%] m-auto rounded-full p-2 justify-center items-center">
                 {feature.icon}
                 <p className="mt-4 font-semibold text-gray-900">
                   {feature.name}

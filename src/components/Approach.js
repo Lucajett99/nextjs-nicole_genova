@@ -40,31 +40,43 @@ export default function Approach() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-gray-950">
-                Il mio approccio
-              </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl">
                 Il mio approccio
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-900">
-                Ogni percorso logopedico comincia con una valutazione. La
-                valutazione è una fase fondamentale del processo, finalizzata a
-                stabilire gli obiettivi da perseguire. Solo così è possibile
-                costruire un profilo del paziente ed un percorso individuale.
-                Attraverso il colloquio con i caregiver (genitori o familiari o
-                tutori) e tramite l’osservazione diretta, che prevede la
-                somministrazione di test specifici, è possibile comprendere la
-                situazione generale. Il lavoro di squadra è fondamentale. La
-                presa in carico deve coinvolgere tutti: genitori, familiari,
-                insegnanti e altre figure professionali. Successivamente i
-                caregiver verranno coinvolti nel trattamento riabilitativo:
-                dovranno assistere alla seduta, vedere insieme la difficoltà,
-                accoglierla e definire gli strumenti per aiutare concretamente
-                il paziente. Con una presa in carico globale e l'allenamento
-                costante, il trattamento sarà più efficace e anche più veloce.
-                Ogni percorso ha la sua durata, che non è dettata dalla
-                problematica, ma dalla persona, perché ogni percorso è
-                individuale.
+
+              <h3 className="mt-6 text-2xl font-semibold leading-8 text-gray-950">
+                Valutazione
+              </h3>
+              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+                Ogni percorso logopedico inizia con una fase fondamentale: la
+                valutazione. Attraverso un'attenta osservazione e la
+                somministrazione di test specifici, costruisco un profilo
+                personalizzato del paziente, base essenziale per definire
+                obiettivi chiari e realizzabili.
+              </p>
+
+              <h3 className="mt-6 text-2xl font-semibold leading-8 text-gray-950">
+                Lavoro di squadra
+              </h3>
+              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+                Il successo della terapia si basa sulla collaborazione attiva di tutti gli attori coinvolti:
+              </p>
+              <ul className="mt-2 text-base indent-6 sm:text-xl leading-8 text-gray-900 list-disc list-inside">
+                <li>Genitori e familiari</li>
+                <li>Insegnanti</li>
+                <li>Professionisti sanitari</li>
+              </ul>
+              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+                I caregiver sono parte integrante del percorso terapeutico. Durante le sedute,
+                potranno osservare, comprendere le difficoltà e acquisire gli strumenti pratici
+                per supportare efficacemente il paziente nel quotidiano.
+              </p>
+
+              <h3 className="mt-6 text-2xl font-semibold leading-8 text-gray-950">
+                    Un percorso su misura
+              </h3>
+              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+                Ogni persona è unica, e così deve essere il suo percorso terapeutico. La durata e l'intensità del trattamento non sono determinate dalla problematica in sé, ma vengono personalizzate in base alle caratteristiche e ai progressi individuali.
               </p>
             </div>
           </div>
