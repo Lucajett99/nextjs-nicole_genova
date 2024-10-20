@@ -42,57 +42,66 @@ export default function WhoIAm() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-600">
+              <p className="text-base font-semibold leading-7 text-gray-950">
                 Il mio percorso
               </p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl">
                 Chi sono
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
-                Laureata con lode in logopedia presso la facoltà di Medicina e
-                Chirurgia dell’Università di TORVERGATA di Roma nell’anno 2019.{" "}
+              <p className="mt-6 text-xl leading-8 text-gray-900">
+                Mi chiamo Nicole e sono molisana, ma la mia storia è un mix
+                esplosivo di culture. Sono nata in Germania, dove mia mamma
+                portava con sé le radici della Repubblica Ceca, mentre papà è
+                tutto italiano, con il cuore piantato saldamente in Molise. Sono
+                cresciuta in Italia, tra le colline del mio paese nella fattoria
+                di famiglia, dove ho imparato a conoscere e amare la natura e
+                gli animali.
               </p>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-8 text-gray-900">
+                Dopo il diploma di maturità classica ho deciso di trasferirmi a
+                Zurigo, in Svizzera, dove ho vissuto per due anni, lavorando e
+                seguendo alcuni corsi di psicologia e di lingua tedesca
+                all'Università di Zurigo.{" "}
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-900">
+                Tornata in Italia, mi sono laureata con lode in logopedia presso
+                la facoltà di Medicina e Chirurgia dell’Università di Torvergada
+                di Roma nell’anno 2019.{" "}
+              </p>
+              <p className="mt-6 text-xl leading-8 text-gray-900">
                 Ho concluso il I° Modulo del corso di formazione LIS (Lingua
                 Italiana dei Segni) promulgato dall’ANSI a giugno 2018.
               </p>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-8 text-gray-900">
                 Ho partecipato al corso di I° livello tecnica Prompt, diventando
                 Prompter di I livello, per il trattamento dei disturbi
                 fono-articolatori del linguaggio.
               </p>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-8 text-gray-900">
                 Ho eseguito la formazione di I livello nella valutazione e
                 terapia dello squilibrio muscolare orofacciale - metodo
                 Andretta.
               </p>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-8 text-gray-900">
                 Da gennaio 2022 sono una logopedista abilitata all’applicazione
                 del metodo Logogenia®.
               </p>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-8 text-gray-900">
                 In seguito ad un tirocinio formativo, ho collaborato come libero
                 professionista presso il Centro PotenziAli - Neuropsicologia
                 dello Sviluppo di Roma, occupandomi principalmente del
                 trattamento dei disturbi dell’apprendimento.
               </p>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-8 text-gray-900">
                 Da gennaio 2020 svolgo la mia attività sulla provincia di Chieti
                 e di Campobasso.
-              </p>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
-                Attualmente sono iscritta al Corso di Alta Formazione in Metodo
-                Propriocettivo Elastico (Proel), presso l’Università
-                Internazionale Menéndez Pelayo di Santander (Spagna), per
-                trattare i disturbi della voce e ottimizzare la voce normale e
-                professionale.
               </p>
             </div>
           </div>
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <Image
-            className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
+            className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[28rem]"
             src={profileImage}
             alt=""
             loading="lazy"
@@ -100,7 +109,7 @@ export default function WhoIAm() {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+            <div className="max-w-xl text-base leading-7 text-gray-900 lg:max-w-lg">
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                 Per approfondire
               </h2>

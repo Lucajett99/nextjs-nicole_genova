@@ -7,7 +7,7 @@ export default function contacts() {
 
   return (
     <Layout>
-      <div className="isolate px-6 py-24 sm:py-32 lg:px-8">
+      <div className="isolate px-6 py-24 sm:py-32 lg:px-8 items-center">
         <div
           className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
           aria-hidden="true"
@@ -24,20 +24,22 @@ export default function contacts() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Contatti
           </h2>
-          <ul className="mt-2 text-lg leading-8 text-black">
-            <li>Telefono: +39 0123456789</li>
-            <li>Email: logopedistanicolegenova@gmail.com</li>
-          </ul>
-          <p className="mt-2 text-lg leading-8 text-gray-800">
-            Oppure compila il form sottostante e sarai ricontattato al più
-            presto
-          </p>
         </div>
-        <div class="flex flex-row justify-content-center">
-          <div className="flex-initial">
-            <ContactForm />
+        <div className="flex flex-col sm:flex-row flex-auto items-center justify-around mt-8">
+          <div className="max-w-2xl">
+            <ul className="mt-2 text-lg leading-8 text-black">
+              <li>Telefono: +39 0123456789</li>
+              <li>Email: logopedistanicolegenova@gmail.com</li>
+            </ul>
+            <span className="mt-6 text-lg leading-8 text-black">
+              Ricevo negli studi:
+            </span>
+            <ul className="mt-2 text-lg indent-6 leading-8 text-black list-disc list-inside">
+              <li>Studio di Via Roma 1, Campobasso</li>
+              <li>Studio di Via Garibaldi 2, Campobasso</li>
+            </ul>
           </div>
-          <div className="flex-none w-64 ...">
+          <div className="flex-none mt-6 sm:mt-0 w-64 lg:w-96 ...">
             <SimpleMap style={{ width: "100%" }} />
           </div>
         </div>

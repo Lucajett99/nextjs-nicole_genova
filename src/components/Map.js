@@ -13,7 +13,7 @@ const Marker = (props) => {
     <div onClick={handleClick}>
       <Image
         src={markerImage}
-        className="h-8 w-8 mx-auto text-indigo-600"
+        className="h-8 w-8 mx-auto text-gray-950"
         aria-hidden="true"
         loading="lazy"
       />
@@ -80,13 +80,13 @@ const SimpleMap = () => {
 
   return (
     <div
-      className="block max-w-sm p-1 bg-slate-300 border border-slate-300 rounded-lg shadow "
+      className="block p-1 bg-slate-300 border border-slate-300 rounded-lg shadow "
     >
       {mapReady}
       <GoogleMap
         defaultCenter={centroid}
         defaultZoom={10}
-        mapMinHeight="50vh"
+        mapMinHeight="40vh"
         onGoogleApiLoaded={onGoogleApiLoaded}
       >
         {markers.map(({ lat, lng, name }, index) => (

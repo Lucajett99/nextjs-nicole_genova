@@ -40,7 +40,7 @@ export default function ComingSoon({ children }) {
   }, []); // Rimuovi "dot" dalle dipendenze di useEffect
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-300 to-purple-500 flex justify-center items-center">
+    <div className="min-h-screen bg-gradient-to-r from-[#00B3B0] to-[#FF8E7E] flex justify-center items-center">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">

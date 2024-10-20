@@ -1,10 +1,11 @@
 import Image from "next/image";
-import speechImage from "../../public/speech2.svg";
-import speechPublicImage from "../../public/speech3.svg";
-import learningImage from "../../public/learning.svg";
-import swallowingImage from "../../public/deglutizione.svg";
-import voiceImage from "../../public/voice.svg";
+    import speechImage from "../../public/speechImage.png";
+import stutteringImage from "../../public/stuttering.png";
+import learningImage from "../../public/learning.png";
+import swallowingImage from "../../public/swallowing.png";
+import voiceImage from "../../public/voice.png";
 import rehabilitationImage from "../../public/rehabilitation.svg";
+import tongueImage from "../../public/tongue.png";
 
 const features = [
   {
@@ -14,7 +15,7 @@ const features = [
     icon: (
       <Image
         src={speechImage}
-        className="h-16 w-16 mx-auto text-indigo-600"
+        className="h-16 w-16 mx-auto text-gray-950"
         aria-hidden="true"
         loading="lazy"
       />
@@ -27,20 +28,32 @@ const features = [
     icon: (
       <Image
         src={learningImage}
-        className="h-16 w-16 mx-auto text-indigo-600"
+        className="h-16 w-16 mx-auto text-gray-950"
         aria-hidden="true"
         loading="lazy"
       />
     ),
   },
   {
-    name: "Valutazione e trattamento della deglutizione atipica e disfunzionale",
+    name: "Valutazione e trattamento della deglutizione disfunzionale",
     description:
       "Aiuto per affrontare problemi di deglutizione irregolare o problematica.",
     icon: (
       <Image
         src={swallowingImage}
-        className="h-16 w-16 mx-auto text-indigo-600"
+        className="h-16 w-16 mx-auto text-gray-950"
+        aria-hidden="true"
+        loading="lazy"
+      />
+    ),
+  },
+  {
+    name: "Valutazione e trattamento del frenulo linguale alterato",
+    description: "",
+    icon: (
+      <Image
+        src={tongueImage}
+        className="h-16 w-16 mx-auto text-gray-950"
         aria-hidden="true"
         loading="lazy"
       />
@@ -52,8 +65,8 @@ const features = [
       "Terapia per migliorare la fluidità nella comunicazione verbale.",
     icon: (
       <Image
-        src={speechPublicImage}
-        className="h-16 w-16 mx-auto text-indigo-600"
+        src={stutteringImage}
+        className="h-16 w-16 mx-auto text-gray-950"
         aria-hidden="true"
         loading="lazy"
       />
@@ -66,25 +79,12 @@ const features = [
     icon: (
       <Image
         src={voiceImage}
-        className="h-16 w-16 mx-auto text-indigo-600"
+        className="h-16 w-16 mx-auto text-gray-950"
         aria-hidden="true"
         loading="lazy"
       />
     ),
-  },
-  {
-    name: "Esiti post-ictus (afasia)",
-    description:
-      "Supporto per la riabilitazione della comunicazione dopo ictus, compresa l'afasia.",
-    icon: (
-      <Image
-        src={rehabilitationImage}
-        className="h-16 w-16 mx-auto text-indigo-600"
-        aria-hidden="true"
-        loading="lazy"
-      />
-    ),
-  },
+  }
 ];
 
 
@@ -92,10 +92,10 @@ export default function Treatments() {
   return (
     <div className="relative overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="mx-auto max-w-2xl lg:text-center">
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl">
           Di cosa mi occupo?
         </p>
-        <p className="mt-6 sm:text-lg leading-8 text-gray-600">
+        <p className="mt-6 sm:text-lg leading-8 text-gray-900">
           Questi sono i trattamenti che utilizzo
         </p>
       </div>
@@ -104,16 +104,14 @@ export default function Treatments() {
           {features.map((feature) => (
             <div
               key={feature.name}
-              className="text-center text-base lg:text-base bg-slate-300 rounded-xl shadow-lg h-70 p-4 sm:p-2 lg:p-7"
+              className="text-center text-sm lg:text-sm bg-slate-300 rounded-full shadow-lg h-70 w-70 p-4 sm:p-2 lg:p-7"
             >
               <div className="h-full">
                 {feature.icon}
                 <p className="mt-4 font-semibold text-gray-900">
                   {feature.name}
                 </p>
-                <p className="mt-2 text-gray-600">
-                  {feature.description}
-                </p>
+                <p className="mt-2 text-gray-900">{feature.description}</p>
               </div>
             </div>
           ))}
