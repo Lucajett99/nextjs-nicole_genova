@@ -57,7 +57,7 @@ export default function Header() {
 						<Link
 							key={item.name}
 							href={item.href}
-							className="text-lg font-semibold leading-6 text-gray-900 hover:text-gray-50"
+							className="text-lg font-semibold leading-6 text-white hover:text-gray-900"
 						>
 							{item.name}
 						</Link>

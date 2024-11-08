@@ -17,14 +17,11 @@ export default function index() {
                         }}
                     />
                 </div>
-                <div className="mx-auto max-w-2xl py-32">
+                <div className="mx-auto max-w-4xl sm:max-w-5xl py-32">
                     <div className="text-center">
-                        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                            Comunica con fiducia, realizza il tuo potenziale:
+                        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-6xl">
+                            Nessun vento è favorevole per chi non sa dove andare, ma per noi che sappiamo anche la brezza sarà preziosa
                         </h1>
-                        <p className="mt-6 text-lg leading-8 text-white">
-                            Benvenuti nel mondo della logopedia professionale!
-                        </p>
                     </div>
                     <div className="mt-14 flex justify-center justify-items-center text-center gap-x-4">
                         <Link
