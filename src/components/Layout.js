@@ -2,9 +2,9 @@ import Header from "./Header.js";
 import Head from "next/head";
 
 const Layout = ({ children }) => {
-  // or: <div className="bg-gradient-to-r from-[#FF8E7E] to-[#00B3B0]">
+  // or: <div className="bg-gradient-to-r from-[#00B3B0] to-[#FF8E7E]">
   return (
-    <div className="bg-gradient-to-r from-[#00B3B0] to-[#FF8E7E]">
+      <div className="bg-gradient-to-r from-[#FF8E7E] to-[#00B3B0]">
       <Head>
         <title>Logopedista Nicole Genova</title>
         <meta name="description" content="Logopedista Nicole Genova" />
