@@ -40,14 +40,14 @@ export default function Approach() {
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-950 sm:text-4xl">
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Il mio approccio
               </h1>
 
-              <h3 className="mt-6 text-2xl font-semibold leading-8 text-gray-950">
+              <h3 className="mt-6 text-2xl font-semibold leading-8 text-white">
                 Valutazione
               </h3>
-              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+              <p className="mt-6 text-base sm:text-xl leading-8 text-white">
                 Ogni percorso logopedico inizia con una fase fondamentale: la
                 valutazione. Attraverso un'attenta osservazione e la
                 somministrazione di test specifici, costruisco un profilo
@@ -55,27 +55,27 @@ export default function Approach() {
                 obiettivi chiari e realizzabili.
               </p>
 
-              <h3 className="mt-6 text-2xl font-semibold leading-8 text-gray-950">
+              <h3 className="mt-6 text-2xl font-semibold leading-8 text-white">
                 Lavoro di squadra
               </h3>
-              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+              <p className="mt-6 text-base sm:text-xl leading-8 text-white">
                 Il successo della terapia si basa sulla collaborazione attiva di tutti gli attori coinvolti:
               </p>
-              <ul className="mt-2 text-base indent-6 sm:text-xl leading-8 text-gray-900 list-disc list-inside">
+              <ul className="mt-2 text-base indent-6 sm:text-xl leading-8 text-white list-disc list-inside">
                 <li>Genitori e familiari</li>
                 <li>Insegnanti</li>
-                <li>Professionisti sanitari</li>
+                <li>Medici e professionisti sanitari</li>
               </ul>
-              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+              <p className="mt-6 text-base sm:text-xl leading-8 text-white">
                 I caregiver sono parte integrante del percorso terapeutico. Durante le sedute,
                 potranno osservare, comprendere le difficoltà e acquisire gli strumenti pratici
                 per supportare efficacemente il paziente nel quotidiano.
               </p>
 
-              <h3 className="mt-6 text-2xl font-semibold leading-8 text-gray-950">
+              <h3 className="mt-6 text-2xl font-semibold leading-8 text-white">
                     Un percorso su misura
               </h3>
-              <p className="mt-6 text-base sm:text-xl leading-8 text-gray-900">
+              <p className="mt-6 text-base sm:text-xl leading-8 text-white">
                 Ogni persona è unica, e così deve essere il suo percorso terapeutico. La durata e l'intensità del trattamento non sono determinate dalla problematica in sé, ma vengono personalizzate in base alle caratteristiche e ai progressi individuali.
               </p>
             </div>
@@ -83,13 +83,13 @@ export default function Approach() {
         </div>
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <Image
-            className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
+            className="w-[20rem] max-w-[35rem] rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
             src={logopedist}
             alt=""
             loading="lazy"
           />
           <Image
-            className="w-[20rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem] mt-10"
+            className="w-[20rem] max-w-[35rem] rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem] mt-10"
             src={logopedist2}
             alt=""
             loading="lazy"

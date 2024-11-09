@@ -24,22 +24,22 @@ export default function contacts() {
                     />
                 </div>
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                         Contatti
                     </h2>
                 </div>
                 <div className="flex flex-col sm:flex-row flex-auto items-center justify-around mt-8">
                     <div className="max-w-2xl">
-                        <ul className="mt-2 text-base sm:text-xl leading-8 text-black">
+                        <ul className="mt-2 text-base sm:text-xl leading-8 text-white">
                             <li><span className="font-bold">Telefono:</span> <span className="text-sm sm:text-xl">+39 0123456789</span></li>
                             <li><span className="font-bold">E-mail:</span> <span className="text-sm sm:text-xl">logopedistanicolegenova@gmail.com</span></li>
                         </ul>
-                        <span className="mt-6 text-base sm:text-xl leading-8 text-black">
+                        <span className="mt-6 text-base sm:text-xl leading-8 text-white">
                             Ricevo negli studi:
                         </span>
-                        <ul className="mt-2 text-sm sm:text-xl indent-2 leading-8 text-black list-disc list-inside">
-                            <li>Piazza Giuseppe Verdi 1, Vasto (CH)</li>
-                            <li>Via Argentieri 352, Montenero di Bisaccia (CB)</li>
+                        <ul className="mt-2 ml-6 sm:ml-10 text-sm sm:text-xl leading-8 text-white list-disc">
+                            <li>Piazza Giuseppe Verdi 1, Vasto (CH), 66054</li>
+                            <li>Via Argentieri 352, Montenero di Bisaccia (CB), 86036</li>
                         </ul>
                     </div>
                     <div className="flex-none mt-6 sm:mt-0 w-72 lg:w-96 ...">
@@ -47,7 +47,7 @@ export default function contacts() {
                     </div>
                     {/* Aggiunta dei social */}
                     {/* <div className="mt-6">
-                        <h3 className="text-base sm:text-xl font-semibold text-gray-900">Seguimi sui social</h3>
+                        <h3 className="text-base sm:text-xl font-semibold text-white">Seguimi sui social</h3>
                         <div className="mt-4 flex space-x-6">
                             <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faFacebook} className="text-2xl text-blue-600 hover:text-blue-800" />
