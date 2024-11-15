@@ -4,7 +4,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/logo.png";
+import logo from "../../public/icons/logo.png";
 
 const navigation = [
 	{ name: "Home", href: "/" },

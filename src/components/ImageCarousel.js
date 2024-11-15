@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import logopedist from "../../public/logopedista.jpg";
-import logopedist2 from "../../public/logopedista2.jpg";
-import riabimed from "../../public/riabimed.jpg";
+import one from "../../public/pictures/mani2.jpg";
+import two from "../../public/pictures/giochi.jpg";
+import three from "../../public/pictures/mani.jpg";
 import Image from "next/image";
 
 export default function ImageCarousel() {
@@ -9,17 +9,17 @@ export default function ImageCarousel() {
 
     const images = [
         {
-            url: logopedist,
+            url: one,
             alt: "Sessione di logopedia",
             caption: "Sessioni personalizzate per ogni paziente"
         },
         {
-            url: logopedist2,
+            url: two,
             alt: "Terapia del linguaggio",
             caption: "Approccio professionale e empatico"
         },
         {
-            url: riabimed,
+            url: three,
             alt: "Studio di logopedia",
             caption: "Ambiente accogliente e confortevole"
         }
@@ -37,7 +37,7 @@ export default function ImageCarousel() {
 
     return (
         <div className="relative w-full max-w-4xl mx-auto mt-8 overflow-hidden rounded-lg shadow-xl">
-            <div className="relative h-[400px]">
+            <div className="relative h-[450px]">
                 {images.map((image, index) => (
                     <div
                         key={index}

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logopedist from "../../public/logopedista.jpg";
-import logopedist2 from "../../public/logopedista2.jpg";
+import one from "../../public/pictures/same_exam.jpeg";
+import two from "../../public/pictures/lavagna2.jpg";
 
 export default function Approach() {
   return (
@@ -84,13 +84,13 @@ export default function Approach() {
         <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <Image
             className="w-[20rem] max-w-[35rem] rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
-            src={logopedist}
+            src={one}
             alt=""
             loading="lazy"
           />
           <Image
             className="w-[20rem] max-w-[35rem] rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem] mt-10"
-            src={logopedist2}
+            src={two}
             alt=""
             loading="lazy"
           />

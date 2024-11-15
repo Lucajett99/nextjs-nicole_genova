@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import Image from 'next/image'
-import riabimed from '../../public/riabimed.jpg'
-import vasto from '../../public/vasto.JPG'
+import riabimed from '../../public/pictures/riabimed.jpg'
+import vasto from '../../public/pictures/vasto.JPG'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 

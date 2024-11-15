@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import profileImage from "../../public/nicole.jpeg";
+import profileImage from "../../public/pictures/nicole.jpeg";
 
 
 export default function WhoIAm() {

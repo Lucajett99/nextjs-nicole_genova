@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from "next/image";
-import speechImage from "../../public/speechImage.png";
-import stutteringImage from "../../public/stuttering.png";
-import learningImage from "../../public/learning.png";
-import swallowingImage from "../../public/swallowing.png";
-import voiceImage from "../../public/voice.png";
-import tongueImage from "../../public/tongue.png";
+import speechImage from "../../public/icons/speechImage.png";
+import stutteringImage from "../../public/icons/stuttering.png";
+import learningImage from "../../public/icons/learning.png";
+import swallowingImage from "../../public/icons/swallowing.png";
+import voiceImage from "../../public/icons/voice.png";
+import tongueImage from "../../public/icons/tongue.png";
 
 const features = [
     {

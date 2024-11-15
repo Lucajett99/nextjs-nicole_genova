@@ -1,6 +1,6 @@
 import GoogleMap from "google-maps-react-markers";
 import { useRef, useState } from "react";
-import markerImage from "../../public/marker.svg";
+import markerImage from "../../public/pictures/marker.svg";
 import Image from "next/image";
 
 const Marker = (props) => {
