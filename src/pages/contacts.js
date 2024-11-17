@@ -31,8 +31,8 @@ export default function contacts() {
                 <div className="flex flex-col sm:flex-row flex-auto items-center justify-around mt-8">
                     <div className="max-w-2xl">
                         <ul className="mt-2 text-base sm:text-xl leading-8 text-white">
-                            <li><span className="font-bold">Telefono:</span> <span className="text-sm sm:text-xl">+39 0123456789</span></li>
-                            <li><span className="font-bold">E-mail:</span> <span className="text-sm sm:text-xl">logopedistanicolegenova@gmail.com</span></li>
+                            <li><span className="font-bold">Telefono:</span> <span className="text-sm sm:text-xl">+39 320 2438325</span></li>
+                            <li><span className="font-bold">E-mail:</span> <span className="text-sm sm:text-xl">nicolegenova95@gmail.com</span></li>
                         </ul>
                         <span className="mt-6 text-base sm:text-xl leading-8 text-white">
                             Ricevo negli studi:

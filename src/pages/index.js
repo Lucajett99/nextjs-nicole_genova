@@ -37,7 +37,7 @@ export default function Index() {
 
                     <ImageCarousel />
 
-                    {/* <div className="mt-14 flex justify-center justify-items-center text-center gap-x-4">
+                    {/* <div className="mt-20 flex justify-center justify-items-center text-center gap-x-4">
                         <Link
                             href="/treatments"
                             className="inline-block rounded-lg text-center bg-white min-w-[8rem] sm:min-w-[12rem] px-3 py-3 sm:text-lg font-semibold text-gray-900 hover:bg-gray-200 transition-colors duration-300"
@@ -55,4 +55,20 @@ export default function Index() {
             </div>
         </Layout>
     );
+}
+
+export async function getServerSideProps(context) {
+    const isUnderConstruction = true;
+    if (isUnderConstruction && context.req.url === "/") {
+        return {
+            redirect: {
+                destination: "/coming_soon",
+                permanent: false,
+            },
+        };
+    }
+
+    return {
+        props: {},
+    };
 }

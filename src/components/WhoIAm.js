@@ -85,7 +85,7 @@ export default function WhoIAm() {
                                 </li>
                                 <li>
                                     <Link href="https://www.youtube.com/watch?v=d1eMHygmIwQ" className="underline" target="_blank">
-                                        Metodo Prompt
+                                        Sistema Prompt
                                     </Link>
                                 </li>
                             </ul>
