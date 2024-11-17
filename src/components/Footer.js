@@ -11,7 +11,7 @@ const Footer = () => {
                 <p>P.IVA: 01835500701</p>
                 <p> Iscr. Albo: TSRM-PSTRP di CB e IS - n&deg; 47</p>
                 <div className="flex justify-center space-x-4 mb-4">
-                    <Link
+                    {/* <Link
                         href="https://www.facebook.com/nicole.genova.925?locale=it_IT"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -27,7 +27,7 @@ const Footer = () => {
                         className="text-[#E1306C] hover:text-[#C13584] transition-colors"
                     >
                         <FaInstagram className="h-4 w-4" />
-                    </Link>
+                    </Link> */}
                     <p>|</p>
                     <Link
                         href="https://www.linkedin.com/in/nicole-genova-00969b1a6/?originalSubdomain=it"
