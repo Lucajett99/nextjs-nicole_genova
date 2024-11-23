@@ -41,8 +41,9 @@ export default function WhoIAm() {
                                 la facoltà di Medicina e Chirurgia dell’Università di Torvergata
                                 di Roma nell’anno 2019.
                             </p>
+                            
                             <p className="mt-4 text-base sm:text-xl leading-8 text-white">
-                                Collaboro come libero professionista presso il Centro PotenziAli - Neuropsicologia dello Sviluppo di Roma
+                                Attualmente esercito la libera professione nelle province di Campobasso e Chieti, e collaboro come libero professionista presso il Centro PotenziAli - Neuropsicologia dello Sviluppo di Roma.
                             </p>
 
                             <h2 className="mt-6 text-xl font-bold text-white">Le mie competenze</h2>

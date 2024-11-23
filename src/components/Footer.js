@@ -27,8 +27,8 @@ const Footer = () => {
                         className="text-[#E1306C] hover:text-[#C13584] transition-colors"
                     >
                         <FaInstagram className="h-4 w-4" />
-                    </Link> */}
-                    <p>|</p>
+                    </Link>
+                    <p>|</p> */}
                     <Link
                         href="https://www.linkedin.com/in/nicole-genova-00969b1a6/?originalSubdomain=it"
                         target="_blank"
