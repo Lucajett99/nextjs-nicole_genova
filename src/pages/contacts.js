@@ -1,4 +1,5 @@
 import Layout from "../components/Layout.js";
+import { MapPin } from "lucide-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Link from "next/link";
@@ -26,8 +27,26 @@ export default function contacts() {
                             Ricevo negli studi:
                         </span>
                         <ul className="mt-2 ml-6 sm:ml-10 text-sm sm:text-xl leading-8 text-white list-disc">
-                            <li>Piazza Giuseppe Verdi 1, Vasto (CH), 66054</li>
-                            <li>Via Argentieri 352, Montenero di Bisaccia (CB), 86036</li>
+                            <li>
+                                <Link
+                                    href="https://www.google.com/maps/search/?api=1&query=Piazza+Giuseppe+Verdi+1,+Vasto+CH+66054"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-gray-300 underline transition-colors cursor-pointer"
+                                >
+                                    Piazza Giuseppe Verdi 1, Vasto (CH), 66054
+                                </Link>
+                            </li>
+                            <li>  
+                                <Link
+                                    href="https://www.google.com/maps/search/?api=1&query=Riabimed,+Via+Argentieri+352,+Montenero+di+Bisaccia+CB+86036"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-gray-300 underline transition-colors cursor-pointer"
+                                >
+                                    Riabimed, Via Argentieri 352, Montenero di Bisaccia (CB), 86036
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="flex-none mt-6 sm:mt-0 w-72 lg:w-96 ...">
