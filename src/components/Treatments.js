@@ -58,7 +58,7 @@ export default function Treatments() {
                         <div key={feature.name} className="flex justify-center">
                             <div className="relative aspect-square w-full max-w-[280px]">
                                 <div className="absolute inset-0">
-                                    <div className="h-full w-full rounded-full bg-slate-300 shadow-lg flex flex-col items-center justify-center p-6">
+                                    <div className="h-full w-full rounded-full bg-white shadow-lg flex flex-col items-center justify-center p-6">
                                         <div className="flex flex-col items-center space-y-4">
                                             <div className="relative w-16 h-16">
                                                 <Image
