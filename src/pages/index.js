@@ -24,33 +24,19 @@ export default function Index() {
                     </div>
 
                     <ImageCarousel />
-
-                    {/* <div className="mt-20 flex justify-center justify-items-center text-center gap-x-4">
-                        <Link
-                            href="/treatments"
-                            className="inline-block rounded-lg text-center bg-white min-w-[8rem] sm:min-w-[12rem] px-3 py-3 sm:text-lg font-semibold text-gray-900 hover:bg-gray-200 transition-colors duration-300"
-                        >
-                            Trattamenti
-                        </Link>
-                        <Link
-                            href="/whoIam"
-                            className="inline-block rounded-lg text-center bg-white min-w-[8rem] sm:min-w-[12rem] px-3 py-3 sm:text-lg font-semibold text-gray-900 hover:bg-gray-300 transition-colors duration-300"
-                        >
-                            Chi Sono
-                        </Link>
-                    </div> */}
                 </div>
             </div>
         </Layout>
     );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps() {
     const isUnderConstruction = false;
-    if (isUnderConstruction && context.req.url === "/") {
+    
+    if (isUnderConstruction) {
         return {
             redirect: {
-                destination: "/coming_soon",
+                destination: '/coming_soon',
                 permanent: false,
             },
         };
