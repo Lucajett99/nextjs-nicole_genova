@@ -29,12 +29,12 @@ export default function contacts() {
                         <ul className="mt-2 ml-6 sm:ml-10 text-sm sm:text-xl leading-8 text-white list-disc">
                             <li>
                                 <Link
-                                    href="https://www.google.com/maps/search/?api=1&query=Piazza+Giuseppe+Verdi+1,+Vasto+CH+66054"
+                                    href="https://www.google.com/maps/place/Dott.ssa+Nicole+Genova+-+Logopedista/@42.1196756,14.6988423,17z/data=!3m1!4b1!4m6!3m5!1s0xae0295d3e42b5efd:0xb3e896af1f89ecd1!8m2!3d42.1196716!4d14.7014172!16s%2Fg%2F11vbwhz6t4?hl=it&entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:text-gray-300 underline transition-colors cursor-pointer"
                                 >
-                                    Piazza Giuseppe Verdi 1, Vasto (CH), 66054
+                                    Circonvallazione Histoniense 10, Vasto (CH), 66054
                                 </Link>
                             </li>
                             <li>  

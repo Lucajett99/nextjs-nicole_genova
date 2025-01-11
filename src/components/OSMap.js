@@ -20,13 +20,15 @@ const markers = [
         lng: 14.783728682784181,
         name: "Riabimed",
         address: "Via Argentieri 352, Montenero di Bisaccia",
+        label: "Riabimed, Via Argentieri 352, Montenero di Bisaccia",
         image: riabimed
     },
     {
-        lat: 42.11517641945536,
-        lng: 14.708564921754201,
-        name: "Centro Terapia Cognitivo-Comportamentale",
-        address: "Piazza Giuseppe Verdi 1, Vasto",
+        lat: 42.119854606496546,
+        lng: 14.701438654661933,
+        name: "Dott.ssa Nicole Genova - Logopedista",
+        address: "Circonvallazione Histoniense 10, Vasto",
+        label: "Dott.ssa Nicole Genova - Logopedista, Circonvallazione Histoniense 10, Vasto",
         image: vasto
     },
 ];
@@ -37,20 +39,30 @@ const center = {
 };
 
 function OSMap() {
-    const openDirections = (address, name) => {
+    const openMapAtLocation = (latitude, longitude, label = '') => {
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         let url;
+
+        const destinationLabel = label ? encodeURIComponent(label) : `${latitude},${longitude}`;
+
         if (isMobile) {
             if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                url = `maps://maps.apple.com/?daddr=${address}`;
+                // iOS - Usa Apple Maps
+                url = `maps://maps.apple.com/?ll=${latitude},${longitude}&q=${destinationLabel}`;
             } else {
-                url = `google.navigation:q=${address}`;
+                // Android - Usa Google Maps
+                url = `geo:${latitude},${longitude}?q=${destinationLabel}`;
             }
         } else {
-            url = `https://www.google.com/maps/dir/?api=1&destination=${address}`;
+            // Desktop - Usa Google Maps nel browser
+            url = `https://www.google.com/maps/@${latitude},${longitude},15z?hl=en&q=${destinationLabel}`;
         }
+
+        // Apri l'URL in una nuova scheda
         window.open(url, '_blank');
     };
+
+
 
     return (
         <MapContainer
@@ -113,7 +125,7 @@ function OSMap() {
 
                                 {/* Bottone indicazioni */}
                                 <button
-                                    onClick={() => openDirections(marker.address, marker.name)}
+                                    onClick={() => openMapAtLocation(marker.lat, marker.lng, marker.label)}
                                     style={{
                                         width: '100%',
                                         padding: '10px',
