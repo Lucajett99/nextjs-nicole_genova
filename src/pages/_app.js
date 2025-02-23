@@ -8,17 +8,22 @@ export default function App({ Component, pageProps }) {
         <>
             <DefaultSeo
                 title="Studio di Logopedia - Nicole Genova"
-                description="Studio professionale di logopedia a [Vasto] e [Montenero di Bisaccia]. Specializzata in disturbi del linguaggio, della voce e della deglutizione per bambini e adulti."
+                description="Studio professionale di logopedia a Vasto e Montenero di Bisaccia. Specializzata in disturbi del linguaggio, della voce e della deglutizione per bambini e adulti."
+                canonical="https://www.logopedistanicolegenova.it/"
                 openGraph={{
                     type: 'website',
                     locale: 'it_IT',
-                    url: 'http://www.logopedistanicolegenova.it/',
+                    url: 'https://www.logopedistanicolegenova.it/',
                     siteName: 'Nicole Genova Logopedista',
+                }}
+                robotsProps={{
+                    noindex: false,
+                    nofollow: false
                 }}
                 additionalMetaTags={[
                     {
                         name: 'keywords',
-                        content: 'logopedia, logopedista, terapia del linguaggio, disturbi apprendimento, [Vasto], [Montenero di Bisaccia]'
+                        content: 'logopedia, logopedista, terapia del linguaggio, disturbi apprendimento, Vasto, Montenero di Bisaccia'
                     },
                     {
                         name: 'author',
@@ -28,6 +33,7 @@ export default function App({ Component, pageProps }) {
             />
             <Head>
                 <link rel="icon" href="/favicon.png" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Component {...pageProps} />
         </>
