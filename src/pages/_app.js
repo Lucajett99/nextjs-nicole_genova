@@ -2,18 +2,21 @@ import '../styles/globals.css';
 import 'leaflet/dist/leaflet.css'
 import Head from 'next/head';
 import { DefaultSeo } from 'next-seo';
+import { useRouter } from 'next/router';
 
 export default function App({ Component, pageProps }) {
+    const router = useRouter();
+    
     return (
         <>
             <DefaultSeo
                 title="Studio di Logopedia - Nicole Genova"
                 description="Studio professionale di logopedia a Vasto e Montenero di Bisaccia. Specializzata in disturbi del linguaggio, della voce e della deglutizione per bambini e adulti."
-                canonical="https://www.logopedistanicolegenova.it/"
+                canonical={`https://logopedistanicolegenova.it${router.asPath === '/' ? '' : router.asPath}`}
                 openGraph={{
                     type: 'website',
                     locale: 'it_IT',
-                    url: 'https://www.logopedistanicolegenova.it/',
+                    url: 'https://logopedistanicolegenova.it/',
                     siteName: 'Nicole Genova Logopedista',
                 }}
                 robotsProps={{
