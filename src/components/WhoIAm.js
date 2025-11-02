@@ -64,7 +64,7 @@ export default function WhoIAm() {
                                 <li>Formazione sul frenulo linguale alterato, metodo Beghetto e metodo di Giulio</li>
                                 <li>Logopedista abilitata al metodo Logogenia®</li>
                                 <li>Master in Vocologia Clinica presso la Nuova Artec</li>
-                                <li>Corso Oral Motor Therapy - per migliorare agilità e precisione</li>
+                                <li>Corso Oral Motor Therapy - per migliorare l'agilità,  la precisione e per il rinforzo delle strutture orali</li>
                                 <li>Corsi in disturbi della fluenza verbale (balbuzie e cluttering)</li>
                                 <li>Corsi sui disturbi della comprensione morfosintattica - docente Renata Salvadorini</li>
                             </ul>
