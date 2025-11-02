@@ -1,9 +1,10 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import Image from 'next/image'
-import riabimed from '../../public/pictures/riabimed.jpg'
-import vasto from '../../public/pictures/vasto.JPG'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
+
+const riabimed = '/pictures/riabimed.jpg';
+const vasto = '/pictures/vasto.JPG';
 
 const icon = L.icon({
     iconUrl: '/marker-icon.png',
@@ -87,6 +88,7 @@ function OSMap() {
                         }}>
                             {/* Immagine header */}
                             <div style={{
+                                position: 'relative',
                                 width: '100%',
                                 height: '90px',
                                 overflow: 'hidden',
@@ -95,10 +97,12 @@ function OSMap() {
                                 <Image
                                     src={marker.image}
                                     alt={marker.name}
+                                    width={200}
+                                    height={100}
                                     style={{
                                         width: '100%',
                                         height: '100%',
-                                        objectFit: 'cover'
+                                        objectFit: 'cover',
                                     }}
                                 />
                             </div>
