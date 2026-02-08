@@ -6,7 +6,10 @@ import three from "../../public/pictures/lavagna2.jpg";
 
 export default function Approach() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselImages = [two, three];
+  const carouselImages = [
+    { src: two, alt: "Sessione di logopedia con bambino" },
+    { src: three, alt: "Attività educative in studio" }
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -96,7 +99,7 @@ export default function Approach() {
           <Image
             className="w-[20rem] max-w-[35rem] rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem]"
             src={one}
-            alt=""
+            alt="Valutazione logopedica nello studio"
             loading="lazy"
           />
           <div className="relative w-[20rem] max-w-[35rem] sm:w-[35rem] mt-10 rounded-xl overflow-hidden shadow-xl ring-1 ring-gray-400/10 bg-white">
@@ -105,8 +108,8 @@ export default function Approach() {
                 <Image
                   key={index}
                   className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
-                  src={img}
-                  alt=""
+                  src={img.src}
+                  alt={img.alt}
                   loading="lazy"
                 />
               ))}
