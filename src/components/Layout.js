@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const Layout = ({ children }) => {
     return (
-        <div className="bg-gradient-to-r from-[#FF8E7E] to-[#00B3B0]">
+        <div className="bg-gradient-to-r from-[#FFB4A9] to-[#7DD3D3]">
             <Head>
                 <title>Logopedista Nicole Genova</title>
                 <meta name="description" content="Logopedista Nicole Genova" />

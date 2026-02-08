@@ -32,7 +32,7 @@ export default function WhoIAm() {
                                 <Image
                                     className="w-[15rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[20rem]"
                                     src={profileImage}
-                                    alt="Nicole's profile"
+                                    alt="Nicole Genova - Logopedista"
                                     loading="lazy"
                                 />
                             </div>
@@ -77,7 +77,7 @@ export default function WhoIAm() {
                     <Image
                         className="w-[15rem] max-w-[35rem] rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[20rem]"
                         src={profileImage}
-                        alt="Nicole's profile"
+                        alt="Nicole Genova - Logopedista"
                         loading="lazy"
                     />
                 </div>
