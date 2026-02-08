@@ -1,8 +1,19 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import one from "../../public/pictures/same_exam.jpeg";
-import two from "../../public/pictures/lavagna2.jpg";
+import two from "../../public/pictures/ai_img_with_child.jpeg";
+import three from "../../public/pictures/lavagna2.jpg";
 
 export default function Approach() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselImages = [two, three];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev === carouselImages.length - 1 ? 0 : prev + 1));
+    }, 10000);
+    return () => clearInterval(timer);
+  }, []);
   return (
     <div className="relative overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -88,12 +99,28 @@ export default function Approach() {
             alt=""
             loading="lazy"
           />
-          <Image
-            className="w-[20rem] max-w-[35rem] rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 sm:w-[35rem] mt-10"
-            src={two}
-            alt=""
-            loading="lazy"
-          />
+          <div className="relative w-[20rem] max-w-[35rem] sm:w-[35rem] mt-10 rounded-xl overflow-hidden shadow-xl ring-1 ring-gray-400/10 bg-white">
+            <div className="relative aspect-[3/4]">
+              {carouselImages.map((img, index) => (
+                <Image
+                  key={index}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+                  src={img}
+                  alt=""
+                  loading="lazy"
+                />
+              ))}
+            </div>
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+              {carouselImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? 'bg-white' : 'bg-white/50'}`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
